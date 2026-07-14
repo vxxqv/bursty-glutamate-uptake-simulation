@@ -1,17 +1,3 @@
-#!/usr/bin/env python3
-"""Reproducible simulations for an NHSJS computational neuroscience study.
-
-Research question
------------------
-When the number and mean size of presynaptic release events are held constant,
-does temporal clustering (bursting) increase extracellular glutamate burden,
-particularly when astrocytic uptake capacity is reduced?
-
-The model is deliberately minimal and uses normalized glutamate units (NGU).
-It is a mechanistic proof-of-concept, not a patient-specific or concentration-
-calibrated model. Run this file to regenerate all CSV files and figures.
-"""
-
 from __future__ import annotations
 
 import argparse
