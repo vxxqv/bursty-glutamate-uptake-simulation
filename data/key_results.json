@@ -1,0 +1,45 @@
+{
+  "n_main_runs_per_condition": 300,
+  "n_sensitivity_parameter_sets": 500,
+  "burst_to_tonic_peak_ratio_reference": {
+    "uptake_factor": 1.0,
+    "metric": "peak_ngu",
+    "comparison": "Burst/Tonic",
+    "ratio": 3.0514790726762095,
+    "ci95_low": 3.028634723003796,
+    "ci95_high": 3.074140460856805
+  },
+  "burst_to_tonic_peak_ratio_half_uptake": {
+    "uptake_factor": 0.5,
+    "metric": "peak_ngu",
+    "comparison": "Burst/Tonic",
+    "ratio": 2.837491331965826,
+    "ci95_low": 2.8187907717440104,
+    "ci95_high": 2.8561571636049954
+  },
+  "burst_to_tonic_auc_ratio_reference": {
+    "uptake_factor": 1.0,
+    "metric": "auc_ngu_ms",
+    "comparison": "Burst/Tonic",
+    "ratio": 2.2517637623177067,
+    "ci95_low": 2.2484352582571527,
+    "ci95_high": 2.255079584412103
+  },
+  "burst_to_tonic_auc_ratio_half_uptake": {
+    "uptake_factor": 0.5,
+    "metric": "auc_ngu_ms",
+    "comparison": "Burst/Tonic",
+    "ratio": 1.8989523545346194,
+    "ci95_low": 1.896301626794181,
+    "ci95_high": 1.9015277694131014
+  },
+  "burstiness_peak_spearman_reference": 0.9088625801738337,
+  "burstiness_auc_spearman_half_uptake": 0.8840158444884568,
+  "sensitivity_peak_ratio_gt_one_pct": 100.0,
+  "sensitivity_auc_ratio_gt_one_pct": 99.2,
+  "sensitivity_peak_ratio_median": 3.4082939212877066,
+  "sensitivity_auc_ratio_median": 1.904412388893586,
+  "selected_dt_ms": 0.25,
+  "selected_dt_max_peak_error_pct": 0.05659433466913703,
+  "selected_dt_max_auc_error_pct": 0.3110281986997919
+}
