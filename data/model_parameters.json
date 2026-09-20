@@ -1,24 +1,26 @@
 {
-  "dt_ms": 0.25,
-  "duration_ms": 1200.0,
-  "n_events": 20,
-  "first_event_ms": 100.0,
-  "last_event_ms": 870.0,
-  "quantum_ngu": 1.0,
-  "release_cv": 0.15,
-  "vmax_ngu_per_ms": 0.08,
-  "km_ngu": 0.5,
-  "k_loss_per_ms": 0.002,
-  "threshold_ngu": 1.0,
-  "clearance_ngu": 0.05,
-  "burst_size": 5,
-  "burst_isi_ms": 5.0,
-  "seed": 20260714,
-  "uptake_factors": [
-    0.5,
-    0.75,
-    1.0,
-    1.25,
-    1.5
-  ]
+  "protocol": {
+    "dt_ms": 0.02,
+    "duration_ms": 1150.0,
+    "n_events": 20,
+    "first_event_ms": 100.0,
+    "last_event_ms": 860.0,
+    "burst_size": 5,
+    "burst_isi_ms": 20.0,
+    "pulse_size_km": 0.25,
+    "release_cv": 0.0,
+    "km": 1.0,
+    "k_loss_per_ms": 0.001,
+    "clearance_fraction": 0.01
+  },
+  "transporter": {
+    "capacity_km": 0.6,
+    "k_bind_per_km_ms": 8.0,
+    "k_unbind_per_ms": 1.0,
+    "k_translocate_per_ms": 4.0,
+    "k_recover_per_ms": 0.05
+  },
+  "matched_linear_rate_per_ms": 2.6774245267372625,
+  "matched_mm_vmax_km_per_ms": 2.871079384235546,
+  "seed": 20260920
 }

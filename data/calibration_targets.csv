@@ -1,0 +1,5 @@
+quantity,target_basis,value
+single_pulse_t90_ms,adult hippocampal extrasynaptic clearance within approximately 1 ms,0.86
+transporter_availability_t90_ms,activity-dependent slowing returns toward baseline within 50 ms,46.051701859880914
+matched_linear_rate_per_ms,matched t90,2.6774245267372625
+matched_mm_vmax_km_per_ms,matched t90,2.871079384235546
