@@ -2,6 +2,8 @@
 
 Reproducible simulations for **Temporal Clustering of Glutamate Release Increases Extracellular Exposure in Recovery-Limited Uptake Regimes**.
 
+DOI: [10.5281/zenodo.22864139](https://doi.org/10.5281/zenodo.22864139)
+
 The analysis compares linear, static Michaelis-Menten, and transporter-state clearance under matched single-pulse conditions. Tonic and burst protocols use the same event count, total release, and time window. The main analysis uses equal release amplitudes. A separate analysis uses CV = 0.15.
 
 ## Run the analysis
