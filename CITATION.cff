@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "Temporal Clustering of Glutamate Release Increases Extracellular Exposure in Recovery-Limited Uptake Regimes"
+message: "Please cite this software using the metadata below."
+type: software
+authors:
+  - family-names: Patni
+    given-names: Vivaan
+version: 2.0.0
+date-released: 2026-09-21
+doi: 10.5281/zenodo.22864139
+license: MIT
+repository-code: "https://github.com/vxxqv/bursty-glutamate-uptake-simulation"
+url: "https://doi.org/10.5281/zenodo.22864139"
