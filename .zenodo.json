@@ -1,0 +1,20 @@
+{
+  "title": "Temporal Clustering of Glutamate Release Increases Extracellular Exposure in Recovery-Limited Uptake Regimes",
+  "description": "Reproducible simulations comparing linear, static Michaelis-Menten, and reduced transporter-state models of extracellular glutamate clearance under equal-count tonic, Poisson, and burst release protocols.",
+  "creators": [
+    {
+      "name": "Patni, Vivaan",
+      "affiliation": "Deira International School"
+    }
+  ],
+  "keywords": [
+    "glutamate uptake",
+    "astrocyte",
+    "EAAT",
+    "computational neuroscience",
+    "transporter kinetics"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open"
+}
