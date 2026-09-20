@@ -3,7 +3,7 @@ from dataclasses import replace
 
 import numpy as np
 
-import glutamate_uptake_simulation as model
+import glutamate_uptake as model
 
 
 class ModelTests(unittest.TestCase):
