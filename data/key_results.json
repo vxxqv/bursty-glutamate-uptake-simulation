@@ -1,6 +1,6 @@
 {
   "calibrated_single_pulse_t90_ms": 0.86,
-  "transporter_availability_t90_ms": 46.051701859880914,
+  "transporter_availability_t90_ms": 46.54,
   "linear_auc_ratio_cv0": 1.0,
   "static_mm_auc_ratio_cv0": 1.0,
   "state_auc_ratio_cv0": 1.199301241232663,
