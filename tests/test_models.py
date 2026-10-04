@@ -54,6 +54,11 @@ class ModelTests(unittest.TestCase):
         self.assertGreaterEqual(t90, 0.75)
         self.assertLessEqual(t90, 1.05)
 
+    def test_transporter_recovery_is_near_fifty_milliseconds(self):
+        t90 = model.transporter_recovery_t90(self.protocol, self.transporter)
+        self.assertGreaterEqual(t90, 40.0)
+        self.assertLessEqual(t90, 55.0)
+
 
 if __name__ == "__main__":
     unittest.main()
