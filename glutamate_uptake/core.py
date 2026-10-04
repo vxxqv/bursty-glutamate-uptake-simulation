@@ -148,6 +148,22 @@ def single_pulse_t90(model: str, p: Protocol, *, linear_rate: float = 1.0,
     return float(below[0] * pulse_p.dt_ms) if below.size else np.nan
 
 
+def transporter_recovery_t90(p: Protocol,
+                             transporter: TransporterParameters = TransporterParameters()) -> float:
+    pulse_p = replace(p, duration_ms=120.0, first_event_ms=20.0,
+                      last_event_ms=20.0, n_events=1, burst_size=1)
+    impulses, last = make_impulses([np.array([20.0])],
+                                   np.array([[pulse_p.pulse_size_km]]), pulse_p)
+    result = simulate_batch("Transporter-state", impulses, last, pulse_p,
+                            transporter=transporter, return_trace=True)
+    start = int(round(20.0 / pulse_p.dt_ms))
+    free = result["free_trace"][0, start:]
+    minimum_index = int(np.argmin(free))
+    target = free[minimum_index] + 0.9 * (1.0 - free[minimum_index])
+    recovered = np.flatnonzero(free[minimum_index:] >= target)
+    return float(recovered[0] * pulse_p.dt_ms) if recovered.size else np.nan
+
+
 def calibrate_models(p: Protocol, transporter: TransporterParameters
                      ) -> tuple[float, float, pd.DataFrame]:
     state_t90 = single_pulse_t90("Transporter-state", p, transporter=transporter)
@@ -157,7 +173,7 @@ def calibrate_models(p: Protocol, transporter: TransporterParameters
         return single_pulse_t90("Michaelis-Menten", p, vmax=candidate) - state_t90
 
     vmax = brentq(objective, 0.05, 20.0)
-    availability_t90 = np.log(10.0) / transporter.k_recover_per_ms
+    availability_t90 = transporter_recovery_t90(p, transporter)
     rows = [
         {"quantity": "single_pulse_t90_ms",
          "target_basis": "adult hippocampal extrasynaptic clearance within approximately 1 ms",
