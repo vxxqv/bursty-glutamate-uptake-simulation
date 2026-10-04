@@ -6,7 +6,7 @@ authors:
   - family-names: Patni
     given-names: Vivaan
 version: 2.0.0
-date-released: 2026-09-21
+date-released: 2026-10-04
 doi: 10.5281/zenodo.22864139
 license: MIT
 repository-code: "https://github.com/vxxqv/bursty-glutamate-uptake-simulation"
